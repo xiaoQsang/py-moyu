@@ -83,4 +83,4 @@ def count_days_between_two_years(Sday="20000701",Eday="20180701"):
     return EndDays - StartDays
 
 days = count_days_between_two_years('20010820','20180702')
-print('天数:', days)
+print('days:', days)
