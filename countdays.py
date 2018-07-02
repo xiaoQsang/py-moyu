@@ -82,5 +82,7 @@ def count_days_between_two_years(Sday="20000701",Eday="20180701"):
     StartDays = get_before_years_total_days(yStart) + get_mend_days(mStart, is_R_or_N(yStart)) + dStart
     return EndDays - StartDays
 
-days = count_days_between_two_years('20010820','20180702')
-print('days:', days)
+if __name__ == '__main__':
+
+    days = count_days_between_two_years('20010820','20180702')
+    print('days:', days)
