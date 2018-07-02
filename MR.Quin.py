@@ -55,7 +55,7 @@ def get_mend_days(mEnd=12, is_R_N=True):
             totaldays= 31
         elif mEnd == 1:
             totaldays= 0
-
+    return totaldays
 def get_total_days_of_one_year(year=2017, is_R_N=True):
     if is_R_N :
         one_year = 366
@@ -65,10 +65,22 @@ def get_total_days_of_one_year(year=2017, is_R_N=True):
 
 def get_before_years_total_days(yEnd=2017, yStart=2000):
     totaldays = 0
-    years = range(yEnd, yStart)
-    if is_R_or_N(yEnd=2017):
-        one_year = 366
-    else:
-        one_year = 365
+    years = range(yStart, yEnd)
+    for year_every in years:
+        if is_R_or_N(year_every):
+            totaldays += 366
+            totaldays = totaldays + 366
+        else:
+            totaldays = totaldays + 365
+    return totaldays
+def count_days_between_two_years(Sday="20000701",Eday="20180701"):
+    yStart, mStart, dStart = int(Sday[:4]), int(Sday[4:6]), int(Sday[6:8])
+    yEnd, mEnd, dEnd, = int(Eday[:4]), int(Eday[4:6]), int(Eday[6:8])
+    print('dayStart:', yStart, mStart, dStart)
+    print('dayEnd:', yEnd, mEnd, dEnd)
+    EndDays = get_before_years_total_days(yEnd) + get_mend_days(mEnd,is_R_or_N(yEnd)) + dEnd
+    StartDays = get_before_years_total_days(yStart) + get_mend_days(mStart, is_R_or_N(yStart)) + dStart
+    return EndDays - StartDays
 
-def count_days_between_two_years(Sday="20000701",Eday="20180701")
+days = count_days_between_two_years('20010820','20180702')
+print('天数:', days)
