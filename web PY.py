@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/about Me', methods=["GET", "POST"])
+@app.route('/aboutMe', methods=["GET", "POST"])
 def about_Me():
     return "My name is Wolfgang.Ji"
 if __name__ == '__main__':
