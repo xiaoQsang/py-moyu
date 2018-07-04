@@ -11,9 +11,9 @@ def index():
         start = request.form['start']
         end = request.form['end']
         total = countDaysDiffer(start, end)
-        return render_template('index.html', countDays=total, hidden='')
+        return render_template('countdays.html', countDays=total, hidden='')
     else:
-        return render_template('index.html', hidden='hidden')
+        return render_template('countdays.html', hidden='hidden')
 
 
 if __name__ == '__main__':
