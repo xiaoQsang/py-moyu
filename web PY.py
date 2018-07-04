@@ -15,6 +15,6 @@ def countdays():
         total = count_days_between_two_years(start, end)
         return render_template('countdays.html', countDays= total, hidden="")
     else:
-        return render_template('countdays.html')
+        return render_template('countdays.html', hidden='hidden')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
