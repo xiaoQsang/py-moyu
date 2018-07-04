@@ -50,8 +50,8 @@
       <file leaf-file-name="countdays.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/countdays.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="188">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -99,10 +99,10 @@
         <option value="$PROJECT_DIR$/1~100.py" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/countdays.html" />
         <option value="$PROJECT_DIR$/web PY.py" />
         <option value="$PROJECT_DIR$/countdays.py" />
         <option value="$PROJECT_DIR$/webPY.py" />
+        <option value="$PROJECT_DIR$/templates/countdays.html" />
       </list>
     </option>
   </component>
@@ -263,6 +263,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -457,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/countdays.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="188">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
