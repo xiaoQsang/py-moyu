@@ -1,7 +1,10 @@
-For n in range(1, 100):
-     = (n % 2 != 0)
+def pinpang(a, b, c ,x, y, z):
+    first = [a, b, c]
+    second = [x, y, z]
+    for match in first:
+        a != x
+        c != x, z
 
-    return sum_is_odd
 
-
-print(sum_is_odd)
+    print()
+    return 0

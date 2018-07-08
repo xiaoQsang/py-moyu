@@ -5,14 +5,21 @@
     <title>Welcome to Python Web</title>
 </head>
 <body>
-<h1>prprprprprprpr</h1>
-<form method="POST" action="/">
-    <label>开始日期：</label>
-    <input type="text" id="start" name="start" value="20170809"><br>
-    <label>结束日期：</label>
-    <input type="text" id="end" name="end" value="20180707"><br>
-    <input type="submit">
-</form>
-<h2 {{hidden}}>共{{countDays}}天</h2>
+<fieldset>
+    <legend>Welcome to Project Demo</legend>
+    <form method="POST" action="/countdays" enctype='multipart/form-data'>
+        <h2>count days:</h2>
+        <label>开始日期：</label>
+        <input type="text" id="start" name="start" value="20170809"><br>
+        <label>结束日期：</label>
+        <input type="text" id="end" name="end" value="20180707"><br>
+        <h2 style="color: #953d75" {{hidden}}>共{{countDays}}天</h2>
+        <h2>Music/Speech:</h2>
+        <input type="file" id="audio" name="audio">
+        <h2 {{hidden}} style="color: #953d75">音频类型：{{audioType}}</h2><br>
+
+        <input type="submit">
+    </form>
+</fieldset>
 </body>
 </html>

@@ -29,7 +29,7 @@ def convert_2_wav(audio_path):
     return audio_path.replace('.' + format_of_audio, '.wav')
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/countdays', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         start = request.form['start']
@@ -42,9 +42,9 @@ def index():
         audio = convert_2_wav(audio)
         audio_type = use_clf_predict_wav_type(audio)
         os.remove(audio)
-        return render_template('index.html', countDays=total, hidden='', audioType=audio_type)
+        return render_template('countdays.html', countDays=total, hidden='', audioType=audio_type)
     else:
-        return render_template('index.html', hidden='hidden')
+        return render_template('countdays.html', hidden='hidden')
 
 
 if __name__ == '__main__':
